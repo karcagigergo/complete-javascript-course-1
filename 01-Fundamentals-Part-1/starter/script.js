@@ -68,15 +68,38 @@
 
 // JS Fundamentals part one: Lecture 5: Operator precedence:
 
-const now = 2037;
-const ageGergo = now - 1991;
-const ageSarah = now - 2018;
-console.log(now - 1991 > now - 2018);
+// const now = 2037;
+// const ageGergo = now - 1991;
+// const ageSarah = now - 2018;
+// console.log(now - 1991 > now - 2018);
 
 
-let x, y;
-x = y = 25 - 10 - 5;
-console.log(x, y);
+// let x, y;
+// x = y = 25 - 10 - 5;
+// console.log(x, y);
 
-const averageAge = (ageGergo + ageSarah) / 2;
-console.log(ageGergo, ageSarah, averageAge);
+// const averageAge = (ageGergo + ageSarah) / 2;
+// console.log(ageGergo, ageSarah, averageAge);
+
+// JS Fundamentals part one: Lecture 6: Strings and template literals:
+
+const firstName = 'Gergő';
+const job = 'student';
+const birthYear = 1991;
+const year = 2021;
+
+const gergo = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '.';
+console.log(gergo);
+
+const gergoNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(gergoNew);
+
+console.log(`Just a regular string with backtick..`);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String with
+multiple
+lines`);
