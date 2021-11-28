@@ -86,31 +86,38 @@
 //   console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`)
 // }
 
-const jonasArray = [
-  'Jonas',
-  'Schmedtman',
-  2021 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
-]
+// const jonasArray = [
+//   'Jonas',
+//   'Schmedtman',
+//   2021 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven'],
+//   true
+// ]
 
-const types = []
+// const types = []
 
-for (let i = 0; i < jonasArray.length; i++) {
-  //reading from jonasArray
-  console.log(jonasArray[i])
-  //filling up types array
-  types[i] = typeof jonasArray[i]
-  types.push(typeof jonasArray[i])
+// for (let i = 0; i < jonasArray.length; i++) {
+//   //reading from jonasArray
+//   console.log(jonasArray[i])
+//   //filling up types array
+//   types[i] = typeof jonasArray[i]
+//   types.push(typeof jonasArray[i])
+// }
+
+// console.log(types)
+
+// const years = [1991, 2007, 1967, 1667]
+// const ages = []
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2021 - years[i])
+// }
+// console.log(ages)
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
 }
-
-console.log(types)
-
-const years = [1991, 2007, 1967, 1667]
-const ages = []
-
-for (let i = 0; i < years.length; i++) {
-  ages.push(2021 - years[i])
-}
-console.log(ages)
